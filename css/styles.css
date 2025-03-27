@@ -1,0 +1,129 @@
+﻿/* 全体のスタイル */
+body {
+    font-family: "Kiwi Maru", serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* コンテンツの中央配置 */
+.container {
+    max-width: 1000px;
+    padding: 20px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.bg {
+    width: 800px;
+    height: 400px;
+    background-image: url("../images/bg_homepage2.png");
+    background-position: center center; /* 水平方向・垂直方向の中央に配置 */
+    background-repeat: no-repeat; /* 繰り返しなし */
+    background-size: contain; /* 画面いっぱいに拡大・縮小 */
+}
+
+.icon-and-intro {
+    display: flex;
+}
+
+.icon {
+    width: 200px;
+    height: 200px;
+    background-image: url("../images/myicon.png");
+    background-position: center center; /* 水平方向・垂直方向の中央に配置 */
+    background-repeat: no-repeat; /* 繰り返しなし */
+    background-size: contain; /* 画面いっぱいに拡大・縮小 */
+}
+
+.introduction {
+    padding-left: 100px;
+    text-align: left;
+}
+
+.diary-items {
+    height: 500px;
+    width: 300px;
+    text-align: left;
+}
+
+/* タイトル */
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* ナビゲーション */
+nav ul {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: block;
+    margin: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #404040;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #000000;
+}
+
+a,a:hover,a:visited{
+    color: inherit;
+    text-decoration: none;
+}
+
+.pages {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    padding: 5px 10px;
+}
+
+/* フェードインアニメーション */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 10px) {
+    .container {
+
+    }
+    
+    .bg {
+        background-position: unset;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
