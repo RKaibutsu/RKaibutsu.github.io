@@ -12,7 +12,6 @@ body {
     text-align: center;
 }
 
-/* コンテンツの中央配置 */
 .container {
     max-width: 1000px;
     padding: 20px;
@@ -111,20 +110,38 @@ a,a:hover,a:visited{
 /* レスポンシブデザイン */
 @media (max-width: 1000px) {
     .container {
-
+        margin-bottom: 400px;
     }
     
     .bg {
         width: 400px;
         height: 200px;
-        background-image: url("../images/bg_homepage2.png");
-        background-position: center center; /* 水平方向・垂直方向の中央に配置 */
-        background-repeat: no-repeat; /* 繰り返しなし */
-        background-size: contain; /* 画面いっぱいに拡大・縮小 */
+    }
+
+    h1 {
+        font-size: 2.0em;
     }
 
     nav ul li {
-        display: block;
-        margin: 10px 0;
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin-bottom: 500px;
+    }
+
+    .bg {
+        width: 200px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul li {
+        font-size: 0.7em;
     }
 }
