@@ -109,17 +109,18 @@ a,a:hover,a:visited{
 }
 
 /* レスポンシブデザイン */
-@media (max-width: 10px) {
+@media (max-width: 1000px) {
     .container {
 
     }
     
     .bg {
-        background-position: unset;
-    }
-
-    h1 {
-        font-size: 2em;
+        width: 400px;
+        height: 200px;
+        background-image: url("../images/bg_homepage2.png");
+        background-position: center center; /* 水平方向・垂直方向の中央に配置 */
+        background-repeat: no-repeat; /* 繰り返しなし */
+        background-size: contain; /* 画面いっぱいに拡大・縮小 */
     }
 
     nav ul li {
