@@ -8,7 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 70vh;
     text-align: center;
 }
 
@@ -110,7 +110,7 @@ a,a:hover,a:visited{
 /* レスポンシブデザイン */
 @media (max-width: 1000px) {
     .container {
-        margin-bottom: 400px;
+        
     }
     
     .bg {
@@ -125,11 +125,21 @@ a,a:hover,a:visited{
     nav ul li {
         font-size: 0.8em;
     }
+    
+    .icon {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .introduction {
+        padding-left: 75px;
+        font-size: 0.75em;
+    }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 414px) {
     .container {
-        margin-bottom: 500px;
+
     }
 
     .bg {
@@ -143,5 +153,15 @@ a,a:hover,a:visited{
 
     nav ul li {
         font-size: 0.7em;
+    }
+
+    .icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .introduction {
+        padding-left: 50px;
+        font-size: 0.5em;
     }
 }
